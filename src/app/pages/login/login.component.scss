@@ -1,0 +1,18 @@
+.login-page {
+  padding: 2rem 0;
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  form {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid silver;
+    padding: 2rem;
+
+    @media screen and (max-width: 720px) {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<div class="login-page">
+  <form [formGroup]="authForm" (ngSubmit)="submit()">
+    <h3>Log in</h3>
+
+    <div class="alert alert-{{ message.type }}" *ngIf="isShowMessage">{{ message.message }}</div>
+
+    <div class="form-control" [ngClass]="{invalid: authForm.get('name').invalid && authForm.get('name').touched}">
+      <label for="userName">User name:</label>
+      <input type="text" id="userName" formControlName="name">
+
+      <div class="validation" *ngIf="authForm.get('name').invalid && authForm.get('name').touched">
+        <span *ngIf="authForm.get('name').errors.required">It is required field.</span>
+      </div>
+    </div>
+
+
+    <div class="form-control" [ngClass]="{invalid: authForm.get('password').invalid && authForm.get('password').touched}">
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password">
+
+      <div class="validation" *ngIf="authForm.get('password').invalid && authForm.get('password').touched">
+        <span *ngIf="authForm.get('password').errors.required">It is required field.</span>
+        <span *ngIf="authForm.get('password').errors.minlength">
+          This field must contain
+          {{ authForm.get('password').errors.minlength.requiredLength }}
+          and more length.
+        </span>
+      </div>
+    </div>
+
+    <div class="form-control" [ngClass]="{invalid: authForm.get('confirmPassword').invalid && authForm.get('confirmPassword').touched}">
+      <label for="confirm-password">Confirm password:</label>
+      <input type="password" id="confirm-password" formControlName="confirmPassword">
+      <div class="validation" *ngIf="authForm.get('confirmPassword').invalid && authForm.get('confirmPassword').touched">
+        <span *ngIf="authForm.get('confirmPassword').errors['confirmPassword']">Passwords not match.</span>
+        <span *ngIf="authForm.get('confirmPassword').errors.required">It is required field.</span>
+        <span *ngIf="authForm.get('confirmPassword').errors.minlength">
+          This field must contain
+          {{ authForm.get('confirmPassword').errors.minlength.requiredLength }}
+          and more length.
+        </span>
+      </div>
+    </div>
+
+    <button
+      [disabled]="authForm.invalid"
+      class="btn btn-dark"
+    >Submit</button>
+  </form>
+</div>

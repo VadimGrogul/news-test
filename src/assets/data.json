@@ -1,0 +1,42 @@
+{
+  "news" : [
+    {
+      "title" : "Hubble Space Telescope celebrates 30 years of discoveries and awe-inspiring images",
+      "author" : "Ashley Strickland",
+      "date" : "April 24, 2020",
+      "img" : "https://cdn.cnn.com/cnnnext/dam/assets/200423164918-08-hubble-space-telescope-anniversary-exlarge-169.jpg",
+      "content" : "The Hubble Space Telescope launched 30 years ago on Friday, forever changing the way we see the universe. The telescope's ethereal, dreamy and almost fantasy-like views of space vistas have inspired people for decades and led to some of the most important astronomical discoveries.",
+      "url" : "https://edition.cnn.com/2020/04/24/world/hubble-space-telescope-30th-anniversary-legacy-scn/index.html"
+    },
+    {
+      "title" : "Trump, ever the salesman, is peddling dangerous cures for coronavirus",
+      "author" : "Stephen Collinson",
+      "date" : "April 24, 2020",
+      "img" : "https://cdn.cnn.com/cnnnext/dam/assets/200423204526-trump-exlarge-169.jpg",
+      "content" : "Roll up for Donald Trump's old West traveling medicine show. He's marketed steaks and real estate, board games and vodka, but nothing the incorrigible salesman has tried to hawk measures up to his latest routine as he speculated on a possible new cure for Covid-19. For most of his life as a pitchman, Trump has only had his own reputation on the line. But now, in the middle of a generational health crisis, lives are at stake...",
+      "url": "https://edition.cnn.com/2020/04/24/politics/donald-trump-coronavirus-disinfectant-sunlight-science/index.html"
+    },
+    {
+      "title" : "Buddhist art: These ancient images are more timely than you think",
+      "author" : "Brian Boucher",
+      "date" : "April 24, 2020",
+      "img" : "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1311,c_fill,g_auto,h_737,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200413110126-01-buddha-art-statue-image.jpg",
+      "content" : "Buddhist art has been created over two millennia across India, China, Japan and throughout Asia, and takes some distinctive forms in various regions, but generally speaking it was created to guide followers of the Buddha, known as \"the Awakened One,\" in their religious practice.",
+      "url" : "https://edition.cnn.com/style/article/buddhist-art-images/index.html"
+    }
+  ],
+  "profile" : {
+    "first_name" : "Larisa",
+    "last_name" : "Kuzenkova",
+    "date_birth" : "Aug 25, 1998",
+    "address" : "Khreshchatyk 183, Kyiv, Ukraine",
+    "email" : "larisa.queen@gmail.com",
+    "phone" : "+380970700707",
+    "photo" : "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "short_description" : "I'm a digital designer in love with photography, painting and discovering new worlds and cultures."
+  },
+  "user" : {
+    "name" : "Admin",
+    "password" : "12345"
+  }
+}

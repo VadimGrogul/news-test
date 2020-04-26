@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  padding: 1rem 2rem;
+
+  .header-content {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav {
+      display: flex;
+
+      li {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<header class="bg-primary">
+  <div class="header-content">
+    <h1>News test app</h1>
+
+    <ul class="nav">
+      <li><a routerLink="/news"
+        routerLinkActive="active"
+      >News</a></li>
+      <li><a routerLink="/profile"
+        routerLinkActive="active"
+      >Profile</a></li>
+      <li>
+        <a *ngIf="auth.isAuthenticated()" (click)="logout()">Logout</a>
+        <a *ngIf="!auth.isAuthenticated()" routerLink="/login">Login</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
